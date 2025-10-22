@@ -1,16 +1,76 @@
-# React + Vite
+# 🌐 KY Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**KY Portfolio** is a responsive personal portfolio website built using **React.js** and **plain CSS**.  
+It showcases a developer’s profile, projects, skills, and contact form in a modern, gradient-themed layout with professional UI and smooth navigation.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## React Compiler
+- 🧭 **Fixed Navigation Bar** — Always visible while scrolling, for smooth section switching.
+- 💫 **Hero Section** — Includes profile image, intro text, and “Download CV” / “Hire Me” buttons.
+- 🧩 **Projects Section** — Displays project cards with GitHub links for each repository.
+- ⚙️ **Skills Section** — Includes technology icons representing key skills.
+- 💌 **Contact Section** — Integrated with **EmailJS** to send emails directly from the site.
+- 🗺️ **Location Map** — Embedded map beside the contact form.
+- 🎨 **Gradient Backgrounds** — Adds a clean and vibrant aesthetic.
+- 📱 **Fully Responsive** — Optimized for both desktop and mobile devices.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Technologies Used
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **React.js** — Component-based UI development  
+- **CSS (Flexbox & Grid)** — Custom responsive layout  
+- **HTML5 & JavaScript** — Structure and interactivity  
+- **EmailJS** — Contact form integration  
+- **React Icons** — Icons for skills and social media  
+
+---
+
+## 📦 Installation & Setup
+
+To run this project locally:
+
+```bash
+# Clone the repository
+git clone https://github.com/yyav-dev/personal-portfolio.git
+
+# Navigate into the project folder
+cd yav-portfolio1-client
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm start
+```
+
+## ✨ Usage
+
+- Navigate between Home, Projects, Skills, and Contact using the fixed top menu.
+
+- Explore project cards to visit linked GitHub repos.
+
+- Submit messages directly via the contact form powered by EmailJS.
+
+- Experience smooth scrolling and consistent styling across all devices.
+
+## 👨‍💻 Author
+
+**Karthicyadhav**  
+📍 Software Developer | React Enthusiast  
+
+[![GitHub](https://img.shields.io/badge/GitHub-yyav--dev-181717?style=flat&logo=github)](https://github.com/yyav-dev)  
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Karthicyadhav-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/karthicyadhav-s-developer/)  
+
+
+
+## 📜 License
+
+This project is open source and available under the MIT License
+.
+
+## 🖼️ Preview
+
+“A clean, modern React portfolio to showcase your projects, skills, and contact info in one place.”
