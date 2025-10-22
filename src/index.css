@@ -1,0 +1,494 @@
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/* Navbar */
+.navbar ul li a.active-link {
+  color: #2563eb; /* blue for active */
+  font-weight: bold;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 32px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+.navbar h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #2563eb; /* blue */
+}
+
+.navbar h1 span {
+  color: #1f2937; /* gray */
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #374151; /* gray */
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.navbar ul li a:hover {
+  color: #2563eb; /* blue */
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 120px; /* space for fixed navbar */
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 100vh;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+/* Hero Left (Intro) */
+.hero-left {
+  max-width: 500px;
+}
+
+.hero-left h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.hero-left h2 span {
+  color: #2563eb;
+}
+
+.hero-left p {
+  font-size: 1.125rem;
+  color: #4b5563;
+  margin-bottom: 24px;
+}
+
+/* Buttons */
+.hero-left .buttons {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.hero-left .buttons a {
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.hero-left .buttons a.download {
+  background-color: #2563eb;
+  color: white;
+}
+
+.hero-left .buttons a.download:hover {
+  background-color: #1e40af;
+}
+
+.hero-left .buttons a.hire {
+  border: 2px solid #2563eb;
+  color: #2563eb;
+}
+
+.hero-left .buttons a.hire:hover {
+  background-color: #ebf8ff;
+}
+
+/* Hero Right (Profile) */
+.hero-right {
+  margin-top: 32px;
+}
+
+@media (min-width: 768px) {
+  .hero-right {
+    margin-top: 0;
+  }
+}
+
+.hero-right img {
+  width: 256px;
+  height: 256px;
+  border-radius: 50%;
+  border: 4px solid #2563eb;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+.section-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 80px 16px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 24px;
+  color: #2563eb;
+}
+
+.section-text {
+  font-size: 1.1rem;
+  color: #374151;
+}
+
+/* Timeline */
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.timeline-item {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.timeline-year {
+  font-weight: bold;
+  color: #2563eb;
+  min-width: 60px;
+}
+
+.timeline-info h3 {
+  margin-bottom: 4px;
+  font-size: 1.2rem;
+  color: #111827;
+}
+
+.timeline-info p {
+  color: #4b5563;
+}
+/* Skills Section */
+.section-container {
+  text-align: center;
+  padding: 80px 20px;
+  background: #f9fafb;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1e3a8a;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.skill-card {
+  background-color: #ffffff;
+  border-radius: 15px;
+  width: 130px;
+  height: 130px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+/* 🔹 Glow and Bounce Animation */
+.skill-card:hover {
+  transform: translateY(-8px) scale(1.05);
+  box-shadow: 0 10px 25px rgba(37, 99, 235, 0.25);
+}
+
+.skill-icon {
+  font-size: 2.8rem;
+  color: #2563eb;
+  margin-bottom: 10px;
+  transition: transform 0.4s ease, color 0.3s ease;
+}
+
+.skill-card:hover .skill-icon {
+  color: #1e40af;
+  animation: bounce 0.6s ease-in-out;
+}
+
+/* 🔁 Bounce Animation Keyframes */
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(-8px);
+  }
+  60% {
+    transform: translateY(4px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.skill-name {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #1f2937;
+  letter-spacing: 0.5px;
+}
+
+/* ✨ Optional Glow Effect Around Icon */
+.icon-wrapper::after {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: rgba(59, 130, 246, 0.15);
+  filter: blur(20px);
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.skill-card:hover .icon-wrapper::after {
+  opacity: 1;
+}
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.project-card {
+  width: 280px;
+  padding: 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 12px;
+  text-align: left;
+  background-color: white;
+  transition: transform 0.2s;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+}
+.github-btn,
+.demo-btn {
+  display: inline-block;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+.github-btn {
+  background-color: #111827;
+}
+
+.github-btn:hover {
+  background-color: #2563eb;
+}
+
+.demo-btn {
+  background-color: #2563eb;
+}
+
+.demo-btn:hover {
+  background-color: #1e40af;
+}
+/* ====== CONTACT SECTION ====== */
+.contact-section {
+  padding: 80px 20px;
+  background-color: #f9fafb;
+  text-align: center;
+  position: relative;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #1f2937;
+  margin-bottom: 40px;
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* ====== FORM STYLING ====== */
+.contact-form {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.contact-form label {
+  font-weight: 500;
+  color: #1f2937;
+  text-align: left;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.2s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #2563eb;
+}
+
+/* Buttons inside form */
+.form-buttons {
+  margin-top: 10px;
+}
+
+.btn-submit {
+  background-color: #2563eb;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-submit:hover {
+  background-color: #1d4ed8;
+}
+
+/* ====== MAP STYLING ====== */
+.map-container {
+  flex: 1;
+  min-width: 300px;
+  height: 380px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* ====== RESPONSIVE ====== */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+/* ====== Toast Positioning (optional, default is top-right) ====== */
+.Toastify__toast-container {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.footer {
+  background-color: #111827;
+  color: #d1d5db;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+@media (min-width: 768px) {
+  .footer-container {
+    flex-direction: row;
+  }
+}
+
+.footer-text {
+  font-size: 0.95rem;
+}
+
+.brand-name {
+  color: #3b82f6;
+  font-weight: 600;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-icons a {
+  color: #d1d5db;
+  font-size: 1.8rem;
+  transition: color 0.3s ease;
+}
+
+.footer-icons a:hover {
+  color: #3b82f6;
+}
