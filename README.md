@@ -70,6 +70,9 @@ npm start
 
 This project is open source and available under the MIT License
 .
+## 🚀 Live Demo
+[![Live Demo](https://img.shields.io/badge/View-Website-blue?style=for-the-badge)](https://karthicyadhav-portfolio1.vercel.app)
+
 
 ## 🖼️ Preview
 
